@@ -1,0 +1,50 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easySaveGridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginRight="@dimen/textview_margin"
+    android:background="@android:color/holo_orange_light"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.application.easysave.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/saveTextView"
+        android:layout_column="0"
+        android:layout_gravity="top|center"
+        android:text="@string/saveString" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center_horizontal|top"
+        android:ems="10"
+        android:hint="@string/textPrompt" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/discardTextView"
+        android:layout_column="2"
+        android:layout_gravity="top|center"
+        android:text="@string/discardString" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:padding="@dimen/textview_margin" />
+
+</GridLayout>
